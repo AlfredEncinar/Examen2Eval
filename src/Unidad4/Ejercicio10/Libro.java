@@ -5,11 +5,13 @@ public class Libro {
 
 
     private String titulo;
+    private int numPags;
 
 
-    public Libro(String titulo) {
+    public Libro(String titulo , int numPags) {
 
         this.titulo = titulo;
+        this.numPags = numPags;
 
     }
 
@@ -21,10 +23,17 @@ public class Libro {
         this.titulo = titulo;
     }
 
+    public int getNumPags() {
+        return numPags;
+    }
+
+    public void setNumPags(int numPags) {
+        this.numPags = numPags;
+    }
 
     @Override
     public String toString() {
-        String salida = "Titulo : " + this.titulo;
+        String salida = "Titulo : " + this.titulo + " numero de paginas : " + this.numPags;
         return salida;
     }
 

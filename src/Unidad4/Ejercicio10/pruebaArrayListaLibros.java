@@ -19,5 +19,38 @@ package Unidad4.Ejercicio10;
 // que implementen la interfaz Comparator: la clase TituloComparator y la clase PaginasComparator.
 //Crea una clase PruebaArrayListLibros en la que se verifique que todos los métodos funcionan correctamente.
 
-public class Ejercicio10 {
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class pruebaArrayListaLibros implements PaginasComparator{
+    public static void main(String[] args) {
+        ArrayListaLibros coleccion = new ArrayListaLibros();
+
+
+        coleccion.insertar(new Libro("jose", 176));
+        coleccion.insertar(new Libro("pepe", 180));
+        coleccion.insertar(new Libro("weed",1234));
+        coleccion.insertar(new Libro("stilton",345));
+        coleccion.insertar(new Libro("cars",500));
+
+
+        coleccion.eliminarLibro(2);
+
+
+        System.out.println(coleccion.obtenerLibro(1));
+
+        System.out.println("El liro buscado es el " + coleccion.buscarLibro("cars") + " en la coleccion.");
+
+        Collections.sort(Libro , new PaginasComparator());
+
+
+        System.out.println("numero de libros : " + coleccion.numLibros());
+
+
+
+
+
+
+
+    }
 }
