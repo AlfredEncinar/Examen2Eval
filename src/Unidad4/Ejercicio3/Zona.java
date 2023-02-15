@@ -8,7 +8,8 @@ package Unidad4.Ejercicio3;
 
 //- La zona vip con 25 entradas disponibles
 
-//Hay que controlar que hay entradas disponibles antes de venderlas. La clase Zona con sus atributos y métodos se muestra a continuación
+//Hay que controlar que hay entradas disponibles antes
+// de venderlas. La clase Zona con sus atributos y métodos se muestra a continuación
 
 
 public class Zona {
