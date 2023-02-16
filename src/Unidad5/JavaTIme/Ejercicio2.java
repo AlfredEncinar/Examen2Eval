@@ -1,4 +1,4 @@
-package Unidad5;
+package Unidad5.JavaTIme;
 
 //Realiza un procedimiento que vuelque la fecha actual
 // en seis variables correspondientes
@@ -6,7 +6,6 @@ package Unidad5;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Scanner;
 
 public class Ejercicio2 {
 

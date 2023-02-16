@@ -1,4 +1,4 @@
-package Unidad5;
+package Unidad5.JavaTIme;
 
 //Realiza un procedimiento que a partir de un día,
 // mes y año introducido por el teclado,
@@ -6,8 +6,6 @@ package Unidad5;
 // y que fecha será cuando hayan transcurrido 100 días.
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Month;
 import java.util.Scanner;
 import java.time.DayOfWeek;
 
