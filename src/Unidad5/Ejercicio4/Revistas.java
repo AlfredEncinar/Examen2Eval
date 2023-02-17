@@ -1,35 +1,18 @@
 package Unidad5.Ejercicio4;
 
-public class Revistas {
-    private int codigo;
-    private String titulo;
-    private int anno;
+public class Revistas extends Biblioteca {
+
     private int numero;
 
+    public Revistas(int codigo, String titulo, int annoPublicacion,int numero) {
 
-
-    public Revistas(int codigo,String titulo,int anno,int numero) {
-        this.codigo = codigo;
-        this.titulo = titulo;
-        this.anno = anno;
+        super(codigo, titulo, annoPublicacion);
         this.numero = numero;
-
-    }
-
-    public int getCodigo() {
-        return codigo;
-    }
-
-    public int getAnno() {
-        return anno;
     }
 
     @Override
     public String toString() {
-        return " Revistas " +
-                " codigo = " + codigo +
-                " , titulo = " + titulo +
-                " , anno = " + anno +
-                " , numero = " + numero;
+        return "Esto es una revista. \n" + super.toString() + "\nRevista numero: " + numero + "\n";
+
     }
 }
