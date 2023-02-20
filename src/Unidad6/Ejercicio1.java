@@ -18,7 +18,7 @@ public class Ejercicio1 {
 
 
 
-        try (FileReader fr = new FileReader("/home/estudiante/IdeaProjects/Unidad6./hola.txt")){
+        try (FileReader fr = new FileReader("/home/estudiante/IdeaProjects/Examen2Eval/hola.txt")){
             int vocales = 0;
             int leido;
             do {
