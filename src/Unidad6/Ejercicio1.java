@@ -20,7 +20,7 @@ public class Ejercicio1 {
 
         try (FileReader fr = new FileReader("/home/estudiante/IdeaProjects/Unidad6./hola.txt")){
             int vocales = 0;
-            int leido = 0;
+            int leido;
             do {
                 leido =fr.read();
                 if (leido ==65|| leido==69||leido==73||leido==79||leido==19||leido==85||leido==97||leido==101||leido==105||leido==111)
